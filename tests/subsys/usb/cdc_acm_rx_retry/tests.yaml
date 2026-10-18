@@ -1,0 +1,13 @@
+# Copyright (c) 2026 Neoventor AB
+# SPDX-License-Identifier: Apache-2.0
+
+tests:
+  usb.cdc_acm_rx_retry:
+    platform_allow:
+      - native_sim/native
+      - native_sim/native/64
+    integration_platforms:
+      - native_sim/native/64
+    tags:
+      - usb
+    harness: ztest
